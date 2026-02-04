@@ -13,3 +13,8 @@ Disable SSH root to prevent Brute-Force Attacks : like a robot trying every poss
 2- get into --> sudo vi /etc/ssh/sshd_config
 3- change PermitRootLogin yes to no
 4- sudo systemctl restart sshd
+
+to check using cmd 
+```
+sudo cat /etc/ssh/sshd_config | grep -i "permitrootlogin"
+```
